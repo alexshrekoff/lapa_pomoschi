@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Лапа помощи — проект поддержки животных и людей, которым нужна помощь с питомцем.">
+  <title>Лапа помощи — рядом, когда это важно</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="Лапа помощи — на главную"><span class="brand-mark">🐾</span><span>лапа помощи</span></a>
+  <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+  <nav class="nav">
+    <a href="#about">О проекте</a><a href="#help">Нужна помощь</a><a href="#shelters">Приюты</a>
+    <a href="#animals">Ищут дом</a><a href="#lost">Потеряшки</a><a class="nav-support" href="#donate">Поддержите нас</a><a class="nav-cta" href="#contact">Связаться</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <span class="eyebrow">ВМЕСТЕ МЫ МОЖЕМ БОЛЬШЕ</span>
+    <h1>У каждого хвостика должен быть <em>свой дом.</em></h1>
+    <p>Помогаем животным найти заботу, а людям — решение в трудной ситуации. Иногда для счастливого финала нужна всего одна лапа помощи.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="#help">Мне нужна помощь</a><a class="btn btn-light" href="#animals">Найти друга <span>↗</span></a><a class="btn btn-support" href="#donate">Поддержите нас ♥</a></div>
+    <div class="hero-note"><span class="avatar-stack">🐶 🐱 🐾</span><span><b>Забота без осуждения</b><small>Поддержка людей и помощь животным</small></span></div>
+  </div>
+  <div class="hero-art">
+    <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1000&q=85" alt="Собака внимательно смотрит в камеру">
+    <div class="floating-card"><span class="heart">♡</span><div><b>Дом начинается с заботы</b><small>Каждая история важна</small></div></div>
+    <span class="sun-dot"></span>
+  </div>
+</section>
+
+<section class="quick-stats" aria-label="Направления помощи">
+  <div><strong>01</strong><span>Поддержка<br>владельцев</span></div><div><strong>02</strong><span>Временная<br>передержка</span></div>
+  <div><strong>03</strong><span>Поиск дома<br>и семьи</span></div><div><strong>04</strong><span>Помощь<br>потеряшкам</span></div>
+</section>
+
+<section class="section about-section" id="about">
+  <div class="section-heading"><span class="eyebrow">ПОЧЕМУ ЭТО ВАЖНО</span><h2>Помощь начинается <em>с понимания</em></h2></div>
+  <div class="about-grid">
+    <div class="about-photo"><img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=900&q=85" alt="Человек заботливо гладит собаку"></div>
+    <div class="about-text"><p class="lead">Отказ от питомца часто начинается не с отсутствия любви, а с обстоятельств, с которыми сложно справиться в одиночку.</p>
+      <p>«Лапа помощи» — проект, который соединяет владельцев животных, волонтёров, приюты и специалистов. Мы хотим, чтобы у человека был шанс получить поддержку, а у животного — безопасное место и возможность обрести любящую семью.</p>
+      <div class="values"><div><span>♡</span><b>Без осуждения</b><small>Сначала выслушаем и поможем найти варианты.</small></div><div><span>✳</span><b>Ответственно</b><small>Благополучие животного — наш приоритет.</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="help-band" id="help">
+  <div><span class="eyebrow light-eyebrow">ВЫ НЕ ОДНИ</span><h2>Сложно заботиться о питомце прямо сейчас?</h2><p>Не спешите принимать окончательное решение. Расскажите о ситуации — вместе попробуем найти выход.</p></div>
+  <a class="btn btn-cream" href="#support">Получить поддержку <span>↗</span></a>
+</section>
+
+<section class="section" id="support">
+  <div class="section-heading"><span class="eyebrow">ПОДДЕРЖКА И КОНСУЛЬТАЦИИ</span><h2>Давайте разберёмся <em>вместе</em></h2><p>Демо-раздел: форма и чат показывают, как может выглядеть обращение в службу поддержки.</p></div>
+  <div class="support-grid">
+    <form class="panel support-form" id="supportForm">
+      <h3>Расскажите, что случилось</h3>
+      <label>Как к вам обращаться<input required placeholder="Ваше имя"></label>
+      <label>С чем нужна помощь?<select required><option value="">Выберите тему</option><option>Временная передержка</option><option>Финансовые трудности</option><option>Поведение питомца</option><option>Поиск нового дома</option><option>Другая ситуация</option></select></label>
+      <label>Кратко опишите ситуацию<textarea rows="4" placeholder="Любая важная информация…"></textarea></label>
+      <button class="btn btn-primary" type="submit">Отправить обращение</button><small class="form-note">Демонстрация: данные никуда не отправляются.</small>
+      <p class="form-status" aria-live="polite"></p>
+    </form>
+    <div class="panel chat-panel">
+      <div class="chat-top"><div class="support-avatar">♡</div><div><b>Чат поддержки</b><small><i></i> Демо-режим · обычно отвечаем бережно</small></div><span class="dots">•••</span></div>
+      <div class="chat-messages" id="chatMessages"><div class="message received">Здравствуйте! Вы можете спокойно рассказать, что произошло. Мы постараемся подсказать возможные варианты. 💚</div><div class="message sent">Я переживаю, что временно не справляюсь с уходом за питомцем.</div><div class="message received">Спасибо, что написали. Это непростая ситуация, и просить о помощи — нормально. Давайте подумаем о временной передержке и поддержке.</div></div>
+      <form class="chat-input" id="chatForm"><input id="chatText" placeholder="Напишите сообщение…" aria-label="Сообщение"><button aria-label="Отправить сообщение" type="submit">➤</button></form>
+      <small class="form-note chat-disclaimer">Прототип чата: сообщения обрабатываются только в браузере.</small>
+    </div>
+  </div>
+</section>
+
+<section class="section shelters-section" id="shelters">
+  <div class="section-heading"><span class="eyebrow">РЯДОМ МОГУТ ПОМОЧЬ</span><h2>Приюты и <em>передержка</em></h2><p>Здесь будут проверенные организации, к которым можно обратиться за консультацией или временной помощью.</p></div>
+  <div class="map-card"><div class="map-visual"><div class="map-road road-one"></div><div class="map-road road-two"></div><div class="map-road road-three"></div><span class="map-pin pin-one">🐾</span><span class="map-pin pin-two">🐾</span><span class="map-pin pin-three">🐾</span><span class="map-label">Карта приютов и передержек</span></div><div class="map-info"><span class="eyebrow">ИНТЕРАКТИВНАЯ КАРТА</span><h3>Найдите помощь поблизости</h3><p>В готовой версии здесь будет карта с фильтрами по городу, типу помощи и условиям приёма.</p><a class="text-link" href="#" data-placeholder="Вставьте ссылку на карту (например, Яндекс Карты или 2ГИС)">Добавить ссылку на карту ↗</a></div></div>
+  <div class="resource-grid">
+    <article class="resource-card"><span class="resource-icon">🏡</span><h3>Крупные приюты РФ</h3><p>Список известных приютов и благотворительных организаций по регионам.</p><a href="#" data-placeholder="Вставьте ссылку на официальный сайт приюта «Б呼»">Ссылка на сайт организации ↗</a></article>
+    <article class="resource-card"><span class="resource-icon">🤝</span><h3>Временная передержка</h3><p>Контакты волонтёров и организаций, которые помогают на время.</p><a href="#" data-placeholder="Вставьте ссылку на каталог проверенных передержек">Ссылка на каталог передержек ↗</a></article>
+    <article class="resource-card"><span class="resource-icon">🧭</span><h3>Как подготовиться</h3><p>Что уточнить у приюта, какие документы и вещи могут понадобиться.</p><a href="#" data-placeholder="Вставьте ссылку на памятку по передаче питомца">Открыть памятку ↗</a></article>
+  </div>
+</section>
+
+<section class="section animals-section" id="animals">
+  <div class="section-heading heading-row"><div><span class="eyebrow">ИХ ИСТОРИЯ МОЖЕТ ИЗМЕНИТЬСЯ</span><h2>Они ищут <em>дом</em></h2><p>Примеры карточек животных для будущего каталога.</p></div><a class="text-link" href="#" data-placeholder="Вставьте ссылку на полный каталог животных">Все питомцы ↗</a></div>
+  <div class="animal-grid">
+    <article class="animal-card"><img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=700&q=85" alt="Золотистая собака"><div class="animal-info"><div><h3>Ричи</h3><span>🐶 Собака · 3 года</span></div><span class="tag">Добрый</span><p>Любит прогулки и внимание. Ищет спокойную семью.</p><a href="#contact" class="text-link">Узнать о Ричи ↗</a></div></article>
+    <article class="animal-card"><img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=700&q=85" alt="Полосатый кот"><div class="animal-info"><div><h3>Марта</h3><span>🐱 Кошка · 2 года</span></div><span class="tag">Нежная</span><p>Любопытная кошка, которой нужен заботливый дом.</p><a href="#contact" class="text-link">Узнать о Марте ↗</a></div></article>
+    <article class="animal-card"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=700&q=85" alt="Две собаки на прогулке"><div class="animal-info"><div><h3>Боня</h3><span>🐕 Собака · 1 год</span></div><span class="tag">Активная</span><p>Обожает игры и прогулки. Будет рада активному человеку.</p><a href="#contact" class="text-link">Узнать о Боне ↗</a></div></article>
+  </div>
+</section>
+
+<section class="lost-section" id="lost">
+  <div class="section lost-intro"><span class="eyebrow light-eyebrow">ПОМОЖЕМ ВЕРНУТЬСЯ ДОМОЙ</span><h2>Потерялся питомец?</h2><p>Разместите объявление с фотографией, районом и контактами. Чем больше людей увидит информацию, тем выше шанс на счастливую встречу.</p><a class="btn btn-cream" href="#lostForm">Разместить объявление ↗</a></div>
+  <div class="panel lost-panel"><h3>Последние объявления</h3><div class="lost-item"><span class="lost-emoji">🐈</span><div><b>Пропал серый кот</b><small>Москва · район Сокольники · 12 ноября</small></div><span class="status">Ищут</span></div><div class="lost-item"><span class="lost-emoji">🐕</span><div><b>Найдена собака</b><small>Казань · Советский район · 10 ноября</small></div><span class="status found">Найдена</span></div><a href="#" class="text-link" data-placeholder="Вставьте ссылку на форум или раздел всех объявлений">Открыть форум объявлений ↗</a></div>
+</section>
+
+<section class="section report-section" id="lostForm">
+  <div class="section-heading"><span class="eyebrow">ВАША ИНФОРМАЦИЯ МОЖЕТ ПОМОЧЬ</span><h2>Сообщить о <em>животном</em></h2><p>Форма-макет для сообщения о найденном или потерянном животном.</p></div>
+  <form class="panel report-form" id="reportForm"><label>Тип объявления<select required><option>Нашёл(ла) животное</option><option>Потерялся питомец</option></select></label><label>Город и примерное местоположение<input required placeholder="Например: Тула, Центральный парк"></label><label>Контакт для связи<input placeholder="Телефон, почта или соцсеть"></label><label>Описание<textarea rows="3" placeholder="Окрас, особенности, когда и где увидели…"></textarea></label><label class="upload-label">Фотография животного<input type="file" accept="image/*" id="photoInput"><small>В демо-версии можно выбрать файл для предпросмотра.</small></label><div id="photoPreview" class="photo-preview"></div><button class="btn btn-primary" type="submit">Опубликовать объявление</button><p class="form-status" aria-live="polite"></p></form>
+</section>
+
+<section class="section resources-section" id="resources">
+  <div class="section-heading"><span class="eyebrow">ПОЛЕЗНО ЗНАТЬ</span><h2>Забота — это <em>знание</em></h2></div>
+  <div class="tips-grid"><a href="#" data-placeholder="Вставьте ссылку на ветеринарный справочник"><span>🩺</span><b>Здоровье и ветеринария</b><small>Профилактика, вакцинация и когда обращаться к врачу.</small><i>Добавить ссылку ↗</i></a><a href="#" data-placeholder="Вставьте ссылку на советы кинолога или фелинолога"><span>🧠</span><b>Поведение питомца</b><small>Советы специалистов по адаптации и воспитанию.</small><i>Добавить ссылку ↗</i></a><a href="#" data-placeholder="Вставьте ссылку на рекомендации по уходу"><span>🧼</span><b>Ежедневный уход</b><small>Питание, гигиена, прогулки и безопасная среда.</small><i>Добавить ссылку ↗</i></a><a href="#" data-placeholder="Вставьте ссылку на рекомендации по ответственному пристройству"><span>💚</span><b>Ответственное пристройство</b><small>Как подготовиться к появлению питомца в семье.</small><i>Добавить ссылку ↗</i></a></div>
+</section>
+
+
+<section class="donate-section" id="donate">
+  <div class="donate-inner">
+    <div><span class="eyebrow light-eyebrow">ВАША ПОДДЕРЖКА ИМЕЕТ ЗНАЧЕНИЕ</span>
+      <h2>Помогите нам помогать <em>дальше</em></h2>
+      <p>Даже небольшая помощь может стать важным шагом: оплатить временную передержку, корм или консультацию специалиста. В рабочей версии здесь будут проверенные способы поддержки проекта и отчётность.</p>
+    </div>
+    <div class="donate-actions">
+      <a class="btn btn-cream" href="#" data-placeholder="Вставьте ссылку на официальную страницу пожертвований проекта">Поддержать проект ♥</a>
+      <a class="donate-secondary" href="#contact">Предложить помощь волонтёра</a>
+      <small>Добавьте только официальные и проверенные реквизиты проекта.</small>
+    </div>
+  </div>
+</section>
+
+<section class="contact-strip" id="contact"><div><span class="eyebrow light-eyebrow">ДАВАЙТЕ ДЕЛАТЬ ДОБРО ВМЕСТЕ</span><h2>Есть вопрос или идея?</h2><p>Свяжитесь с командой проекта или следите за новостями.</p></div><div class="socials"><a href="#" data-placeholder="Вставьте ссылку на сообщество ВКонтакте">VK</a><a href="#" data-placeholder="Вставьте ссылку на Telegram-канал">TG</a><a href="#" data-placeholder="Вставьте ссылку на страницу команды в другой соцсети">◎</a></div></section>
+</main>
+<footer><a class="brand" href="#home"><span class="brand-mark">🐾</span><span>лапа помощи</span></a><nav class="footer-nav"><a href="#about">О проекте</a><a href="#shelters">Приюты</a><a href="#animals">Ищут дом</a><a href="#lost">Потеряшки</a><a href="#donate">Поддержать</a></nav><span>Учебный прототип сайта · 2026</span><a href="#home">Наверх ↑</a></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
